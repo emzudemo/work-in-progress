@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Mofont';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/Mofont.woff2'); 
+    src: local(''), url('/Mofont.woff2') format('woff2');
+}
+
+html {
+    --bg-1: #fdfdf7;
+    --bg-2: #fff5db;
+    --bg-3: #ffde84;
+    --fg-1: #2b004a;
+    --fg-2: #b3b3b3;
+    --fg-3: #999;
+    --link: #9a73fc;
+    --link-hover: #cfa9d0;
+    --link-active: #4baffb
+}
+
+
+body {
+    --border-radius: 4px;
+    --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+
+    background: rgb(253,253,247);
+    background: linear-gradient(142deg, rgba(253,253,247,1) 0%, rgba(255,245,219,1) 81%, rgba(254,240,204,1) 100%);    color: var(--fg-1);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: var(--font-mono);
+    height: calc(100vh - 2rem);
+    margin: 1rem;
+    line-height: 1.5;
+    cursor: progress;
+    /* cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/np_cursor_740125_000000.png), default !important; */
+}
+
+
+  
+  @keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  }
+
+
+h1{
+    font-family: 'Mofont';
+    font-size: 7em;
+    line-height: 0.8;
+    text-transform: uppercase;
+    hyphens: auto;
+}
+h2{
+    font-family: 'Mofont';
+    font-size: 5em;
+}
+h3,
+h4,
+h5,
+h6 {
+    --font: 'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: var(--font);
+    font-variant-numeric: tabular-nums;
+    font-weight: 00;
+    line-height: 1.1
+
+}
+
+:-webkit-any(h1, h2, h3, h4, h5, h6, p) {
+    margin: 1rem .1rem
+}
+
+:is(h1, h2, h3, h4, h5, h6, p) {
+    margin: 1rem .1rem
+}
+
+label {
+    margin: .5rem .1rem
+}
+
+:-webkit-any(h1, h2, h3, h4, h5, h6, p, label):first-child {
+    margin-top: 0
+}
+
+:is(h1, h2, h3, h4, h5, h6, p, label):first-child {
+    margin-top: 2remr
+}
+
+:-webkit-any(h1, h2, h3, h4, h5, h6, p, label):last-child {
+    margin-bottom: 0
+}
+
+:is(h1, h2, h3, h4, h5, h6, p, label):last-child {
+    margin-bottom: 0
+}
+
+a {
+    color: var(--link)
+}
+
+a:hover {
+    color: var(--link-hover)
+}
+
+a:active {
+    color: var(--link-active)
+}
+
+label {
+    align-items: center;
+    gap: .5rem;
+    display: flex
+}
+
+label input {
+    margin: 0
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+    font-size: inherit
+}
+
+button {
+    background: var(--link);
+    color: var(--bg-1);
+    border-radius: var(--border-radius);
+    border: none;
+    padding: .5rem 1rem
+}
+
+button:hover {
+    background: var(--link-hover)
+}
+
+button:active {
+    background: var(--link-active)
+}
+
+:-webkit-any(button, button:hover, button:active):disabled {
+    background: var(--link);
+    filter: grayscale();
+    opacity: .4
+}
+
+:is(button, button:hover, button:active):disabled {
+    background: var(--link);
+    filter: grayscale();
+    opacity: .4
+}
+
+input,
+textarea,
+select {
+    border: 1px solid var(--bg-2);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    padding: .5rem
+}
+
+input,
+textarea {
+    background: var(--bg-1);
+    color: inherit
+}
+
+select:not([multiple]) {
+    background: var(--bg-2)
+}
+
+textarea {
+    font-family: var(--font-mono);
+    font-size: .9rem
+}
+
+form {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    display: flex
+}
+
+ul:has(li):has(form) {
+    padding: 0;
+    list-style: none
+}
+
+li form {
+    flex-direction: row;
+    gap: .5rem;
+    margin: .5rem 0
+}
+
+.nav {
+    background: var(--bg-2);
+    z-index: 2;
+    border-radius: var(--border-radius);
+    gap: 1em;
+    margin: 0 0 1em;
+    padding: 1em;
+    display: flex;
+    position: relative;
+    font-size: 0.8rem;
+}
+img{
+    width: 100%;
+    box-shadow: 0px 0px 20px 4px #b3b3b3;
+    margin-bottom: 2em;
+}
+nav a {
+    text-decoration: none
+}
+
+nav a[aria-current=true] {
+    border-bottom: 2px solid
+}
+
+ul:has(form) {
+    padding: 0;
+    list-style: none
+}
+
+progress {
+    margin: .5rem 0
+}
+
+progress:first-child {
+    margin-top: 0
+}
+
+progress:lsat-child {
+    margin-bottom: 0
+}
+
+.error {
+    color: red
+}
+
+code {
+    background: var(--bg-2);
+    font-family: var(--font-mono);
+    border-radius: var(--border-radius);
+    padding: .15rem .3rem;
+    font-size: .9em
+}
+
+footer {
+    padding-block: var(--size-7);
+    border-top: 1px solid var(--border);
+    color: var(--text-2);
+    font-weight: var(--font-weight-bold);
+    margin-top: var(--size-7);
+    p {
+        color: var(--text-2);
+    }
+    flex-direction: row;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Utility-Klassen für Grid-Positionierung */
+  .col-3-10 {
+    grid-column: 3 / 10;
+  }
+  
+  .col-4-9 {
+    grid-column: 4 / 9;
+  }
+  
+  .col-7-12 {
+    grid-column: 7 / 12;
+  }
+
+  .col-2-11 {
+    grid-column: 2 / 11;
+  }
+  
+  /* Weitere häufig genutzte Bereiche */
+  .col-1-7 {
+    grid-column: 1 / 7;
+  }
+  
+  .col-6-13 {
+    grid-column: 6 / 13;
+  }
+  
+  .col-1-13 {
+    grid-column: 1 / 13;
+  }
+  
+  /* Medienabfragen für Responsive Design */
+  @media (max-width: 768px) {
+    .grid {
+      gap: 0.75rem;
+    }
+    
+    /* Hier können Sie die Spaltenspannen für Tablets anpassen */
+    .col-3-10 {
+      grid-column: 2 / 12;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+      gap: 0.5rem;
+      padding: 0 0.5rem; /* Reduzierte Ränder */
+    }
+    
+    /* Auf Mobilgeräten können Elemente die volle Breite einnehmen */
+    .col-1-13 {
+      grid-column: 1 / 13;
+    }
+  }
+  
+  /* Neue Media Query für sehr kleine Mobilgeräte */
+  @media (max-width: 380px) {
+    .grid {
+      gap: 0.25rem;
+      padding: 0 0.25rem; /* Noch kleinere Ränder */
+    }
+    
+    /* Alle Grid-Spalten-Klassen auf volle Breite setzen */
+    .col-3-10,
+    .col-4-9,
+    .col-7-12,
+    .col-2-11,
+    .col-1-7,
+    .col-6-13,
+    .col-1-13 {
+      grid-column: 1 / 13;
+    }
+    html {
+        font-size: 95%;
+    }
+  }
