@@ -7,7 +7,7 @@ categories:
   - relaunch
   - digital branding
 published: true
-teaserimage: /images/kampnagel/Startseite-Kampnagel.jpeg
+teaserimage: images/kampnagel/Startseite-Kampnagel.jpeg
 link: https://kampnagel.de
 ---
 
