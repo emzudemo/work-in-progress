@@ -7,7 +7,7 @@ categories:
   - digital branding
   - digital ecosystem
 published: true
-teaserimage: /images/bg-kliniken/Startseite.png
+teaserimage: images/bg-kliniken/Startseite.png
 link: https://bg-kliniken.de
 ---
 

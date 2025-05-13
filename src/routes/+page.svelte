@@ -5,6 +5,10 @@
 		
 </script>
 
+<svelte:head>
+	<title>Work in Progress</title>
+</svelte:head>
+
 
 <h1>MOIN!</h1>
 <p class="intro">

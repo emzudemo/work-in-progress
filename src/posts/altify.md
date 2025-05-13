@@ -6,7 +6,7 @@ categories:
   - CraftCMS 
   - Plugin
 published: true
-teaserimage: /images/altify/gini-screen.jpg
+teaserimage: images/altify/gini-screen.jpg
 link: https://plugins.craftcms.com/altify
 ---
 

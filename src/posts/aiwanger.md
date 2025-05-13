@@ -7,7 +7,7 @@ categories:
   - campaign
   - viral
 published: true
-teaserimage: /images/aiwanger/hubot-aiwanger.webp
+teaserimage: images/aiwanger/hubot-aiwanger.webp
 link: https://ai-wanger.de
 ---
 
