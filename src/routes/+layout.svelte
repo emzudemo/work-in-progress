@@ -9,8 +9,8 @@
 <nav class="col-3-10 nav">
 	<span>[ Em  tsu:  de:m   o: ]</span>
 	<a href="/">home</a>
-	<!-- <a href="/about">about</a>
-	<a href="/blog">blog</a> -->
+	<a href="/about">about</a>
+	<!-- <a href="/blog">blog</a>  -->
 </nav>
 
 <main class="col-2-11">

@@ -11,7 +11,7 @@ teaserimage: images/hapeko/meinhapeko.jpeg
 link: https://meinhapeko.com/
 ---
 
-We designed a new client portal for the recruitement agency Hapeko. With a small team and a lean process we designed a prototype of the portal and tested it with various clients and hapeko advisors.
+We designed a new client portal for the recruitement agency Hapeko. With a small team and a lean process we designed a prototype of the portal and tested it with various clients and Hapeko advisors.
 
 The new application keeps clients and advisors up-to-date throughout the whole hiring process and gives them all information they need at hand. From any device.
 
