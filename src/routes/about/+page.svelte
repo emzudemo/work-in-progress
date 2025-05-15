@@ -1,7 +1,6 @@
-<script>
-  export let data;
-  const { blocks } = data;
-</script>
+<svelte:head>
+	<title>Work in Progress – About</title>
+</svelte:head>
 
 <h1>Hey, it's me!</h1>
   
